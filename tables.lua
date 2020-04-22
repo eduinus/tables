@@ -1,11 +1,11 @@
 local serialization = require("serialization")
 
 function tableLength(table)
-  count = 1
+  count = 0
   while table[count] ~= nil do
     count=count+1
   end
-  return count-1
+  return count
 end
 
 function loadTable(location)
