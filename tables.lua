@@ -2,7 +2,7 @@ local serialization = require("serialization")
 
 function tableLength(table)
   count = 0
-  while table[count] ~= nil do
+  while table[count + 1] ~= nil do
     count=count+1
   end
   return count
